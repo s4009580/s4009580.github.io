@@ -21,7 +21,7 @@
 }
 
 h1 {
-  color: rgb(135, 130, 233);
+  color: rgb(143, 140, 201);
   font-family: "Cherry Swash", serif;
   font-size: 4rem;
   font-weight: 400;
@@ -52,7 +52,7 @@ span {
     padding: 10px;
   } class selector groups and styles elements together */
 .my-colors {
-  color: lightcoral;
+  color: rgba(124, 79, 21, 0.858);
 }
 
 /* #id1 {
@@ -60,7 +60,7 @@ span {
    }
    id selector */
 #venue {
-  color: rgb(101, 45, 255);
+  color: rgb(251, 199, 255);
 }
 
 /* data attribute selector
@@ -88,11 +88,29 @@ li > strong {
 body {
   text-align: center;
   border: 20px solid rgb(120, 207, 247);
+  background-image: linear-gradient(
+    to bottom,
+    #fbabd8,
+    #eca7e0,
+    #d9a5e8,
+    #c2a4ef,
+    #a6a4f3,
+    #9ba4f4,
+    #90a3f5,
+    #83a3f5,
+    #8aa2f5,
+    #92a1f6,
+    #999ff5,
+    #a09ef5
+  );
 }
 h1 {
   text-align: center;
 }
 
+a:hover {
+  color: rgb(0, 128, 255);
+}
 /* CSS size units
 px = pixels
 REM = rem???
