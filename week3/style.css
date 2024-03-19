@@ -1,10 +1,66 @@
-h2 {
-  color: rgb(43, 226, 61);
-}
-
 /* h2 {
     color: 
- } */
+ } this is ELEMENT selector*/
+h1 {
+  color: rgb(135, 130, 233);
+}
+
+/* * {
+    color: whatever
+ } this is UNIVERSAL selectr */
+* {
+  color: rgb(243, 129, 186);
+}
+
 p {
-  color: rgb(109, 101, 214);
+  color: brown;
+}
+
+span {
+  color: black;
+}
+
+/* .class1 {
+    padding: 10px;
+  } class selector groups and styles elements together */
+.my-colors {
+  color: lightcoral;
+}
+
+/* #id1 {
+    font-size: 1.5rem;
+   }
+   id selector */
+#venue {
+  color: rgb(101, 45, 255);
+}
+
+/* data attribute selector
+
+ */
+
+[data-email="email"] {
+  color: purple;
+}
+
+ul > li {
+  color: rgb(104, 208, 81);
+}
+
+li > strong {
+  color: bisque;
+}
+
+/* cascade read from top to bottom, bottom priority, bottom supremacy */
+/* specificity, ranking system, specific properties are prioritised
+  style attribute> ID? class/pseudo-class/attribute> elements> *
+  there was no reason for these rulees but ok WHY IS THERE A HIERARCHY */
+
+/* inheritance applied to parent applied to child????? */
+body {
+  text-align: left;
+  border: 3x solid red;
+}
+h1 {
+  text-align: center;
 }
