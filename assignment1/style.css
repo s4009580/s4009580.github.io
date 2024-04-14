@@ -7,13 +7,13 @@ body {
     border: 5px double #fde7e9;
     background-image: linear-gradient(
       to top,
-      #f7d2e7,
-      #f3c1d0,
-      #ebb0e6,
-      #c0a0e5,
-      #92a1f6,
-      #999ff5,
-      #977df5
+      #f7e492,
+      #f7b48d,
+      #cab0eb,
+      #a1a0e5,
+      #92b5f6,
+      #72adf1,
+      #2484f3
     );
     padding:40px;
   }
@@ -57,7 +57,47 @@ body {
     .innerr {
       background-color: rgba(251, 248, 255, 0);
       width: 700px;
-      height: 270px;
+      height: 350px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+      margin-left: 10px;
+      border: 1px solid rgb(252, 238, 212);
+      flex-shrink: 0;
+      border-radius: 30px;
+      flex-direction: column;
+    }
+
+
+    .innerrr {
+      background-color: rgba(251, 248, 255, 0);
+      width: 700px;
+      height: 130px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+      margin-left: 10px;
+      border: 1px solid rgb(252, 238, 212);
+      flex-shrink: 0;
+      border-radius: 30px;
+      flex-direction: column;
+    }
+
+    .innerrrr {
+      background-color: rgba(251, 248, 255, 0);
+      width: 700px;
+      height: 330px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+      margin-left: 10px;
+      border: 1px solid rgb(252, 238, 212);
+      flex-shrink: 0;
+      border-radius: 30px;
+      flex-direction: column;
+    }
+
+    .innerrrrr {
+      background-color: rgba(251, 248, 255, 0);
+      width: 700px;
+      height: 250px;
       margin-bottom: 5px;
       margin-top: 10px;
       margin-left: 10px;
@@ -76,7 +116,20 @@ body {
 
 
 
-
+    .br { 
+      display: block; 
+      margin-bottom: 0em; 
+  } 
+    
+  .brmedium { 
+      display: block; 
+      margin-bottom: 1em; 
+  } 
+    
+  .brlarge { 
+      display: block; 
+      margin-bottom: 2em; 
+  } 
 
 
 
@@ -224,14 +277,6 @@ body {
       <div id="box6"></div>
       <div id="box7"></div> */
      
-     .br {
-          display: block;
-          margin-bottom: 0em;
-      }
-  
-  
-      .brmedium {
-          display: block;
-          margin-bottom: 2em;
-      }
+     
+     
   
