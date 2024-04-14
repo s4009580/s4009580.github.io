@@ -18,12 +18,11 @@ body {
     padding:40px;
   }
   
-  #image img {
-    >width: 100%;
-    >margin-top: 16px;
-    >margin-bottom: 16px;
-    >height: auto;
-  }
+ .img-class {
+  display: flex;
+flex-direction: row;
+flex-wrap: nowrap
+ }
 
   a:hover {
     color: rgb(249, 216, 255);
@@ -144,6 +143,7 @@ body {
       align-self: center;
       justify-self: center;
       object-fit: cover;
+    
     }
 
 
