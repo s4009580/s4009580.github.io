@@ -44,7 +44,20 @@ body {
     .inner {
       background-color: rgba(251, 248, 255, 0);
       width: 700px;
-      height: 200px;
+      height: 170px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+      margin-left: 10px;
+      border: 1px solid rgb(252, 238, 212);
+      flex-shrink: 0;
+      border-radius: 30px;
+      flex-direction: column;
+    }
+
+    .innerr {
+      background-color: rgba(251, 248, 255, 0);
+      width: 700px;
+      height: 270px;
       margin-bottom: 5px;
       margin-top: 10px;
       margin-left: 10px;
