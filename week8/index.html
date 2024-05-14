@@ -1,0 +1,82 @@
+<!-- I chose a context of "Cooking/Crafting"
+here are my rationale behind the semantics
+
+I wanted my video to take the center stage and have the control underneath 
+to achieve this 
+I went with three section structure:
+1 video-container: it contains the main vid and associated links
+2 video controls: contains buttons to control video
+3. timeline: it contains the buttons to navigate to diff steps.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media player exampl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="outer">
+        <section class="video-container">
+            <video
+            id="my-video"
+            src="stardust (1).mp4"controls>
+
+            </video>
+            </section>
+        <section class="video-controls">
+            <button id="play-pause-btn">
+                <img
+                  id="play-pause-img"
+                  src="https://img.icons8.com/ios-glyphs/30/play--v2.png"
+                  alt="Play Button"
+                  width="24"
+                  height="24"
+                />
+              </button>
+              <button id="mute-unmute-btn">
+                <img
+                  id="mute-unmute-img"
+                  src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+                  alt="Play Button"
+                  width="24"
+                  height="24"
+                />
+              </button>
+            </button>
+            <button id="fullscreen-btn">
+              <img
+                id="fullscreen-img"
+                src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
+                alt="Play Button"
+                width="24"
+                height="24"
+              />
+            </button>
+              <div class="progress-bar">
+                <span id="progress-bar-fill"></span>
+              </div>
+             
+        </section>
+    
+    
+            
+            <section class="timeline">
+                <button id="step1">step 1</button>
+                <button id="step2">step 2</button>
+            </section>
+         
+       
+        
+    </div>
+ 
+
+ </body>
