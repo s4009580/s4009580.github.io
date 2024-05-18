@@ -1,7 +1,7 @@
 :root {
-  --primary-bg-color: #ddd4b4;
+  --primary-bg-color: #f3ceab;
   --text-color: #333;
-  --main-bg-color: #a79573;
+  --main-bg-color: #ac875e;
   --main-text-color: #fff;
   --main-btn-bg-color: #938989;
 }
@@ -55,6 +55,7 @@ body {
   max-width: 1000px;
   width: 100%;
   padding: 10px;
+  
 }
 
 /* Header styling */
@@ -120,7 +121,7 @@ nav a {
 .progress-bar {
   width: 100%;
   height: 10px;
-  background-color: #ddd;
+  background-color: #613c04;
   margin-top: 10px;
   overflow: hidden;
 }
