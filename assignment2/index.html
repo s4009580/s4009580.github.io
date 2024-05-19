@@ -16,16 +16,16 @@
   <body>
     <!-- Header Section -->
     <header>
-      <h1>Chill Time !</h1>
+      <h1>Time to study !</h1>
     </header>
 
     <!-- Navigation Section -->
     <nav>
-      <ul>
+      <!-- <ul>
         <li><a href="#">Home</a></li>
    
         <li><a href="#">Music</a></li>
-        <li><a href="#">Playlists</a></li>
+        <li><a href="#">Playlists</a></li> -->
         <!-- Add or remove navigation items as needed -->
       </ul>
     </nav>
@@ -45,7 +45,7 @@
         <div class="progress-bar">
           <span id="progress-bar-fill"></span>
         </div>
-  <h1> Underwater Exploration
+  <h1> Now Playing: Underwater Exploration
     <h2>by Godmode</h2>
   </h1>
         <section class="video-controls">
@@ -90,16 +90,78 @@
             <button 
             id="stop-timer" onclick="stop()"
             class="btn">Stop  </button>
+            <audio src="mouseclick.mp3" id="click-sound"></audio>
         </div>
         <script src="timer.js"></script>
+        
       </section>
+
+      <div class="outer">
+        <h4> Next Song Previews: </h4>
+        <div class="outer">
+          <button id="play-btn">
+            <img src="yoo.jpg" 
+            class="yoo" 
+            /> </button>
+            <audio src="cocktail.mp3" id="cocktail-audio"></audio>
+            
+            <!-- <section class="video-controls">
+              <button id="play-pause-bttn">
+                <img
+                id="play-pause-imgg"
+                src="https://img.icons8.com/ios-glyphs/30/play--v2.png"
+                alt="playybutton"
+                width="28"
+                height="28"
+                />
+              </button>
+              <div class="progress-bar">
+                <span id="progress-bar-fill"></span>
+              </div> -->
+              <br> <button 
+              id="pause-btn"
+              class="pause">Pause</button>
+            <h6>Cocktail Hour</h6>
+            <h7>Aaron Kenny</h7>
+        </div>
+
+
+        <div class="outer">
+          <button id="play-button">
+            <img src="yee.jpg" 
+            class="yoo"/> 
+          </button>
+            <audio src="violet.mp3" id="violet-audio"></audio>
+            
+            <!-- <section class="video-controls">
+              <button id="play-pause-btttn">           
+            <img
+            id="play-pause-imggg"
+            src="https://img.icons8.com/ios-glyphs/30/play--v2.png"
+            alt="playyybutton"
+            width="28"
+            height="28"
+            />
+          </button>
+          <div class="progress-bar">
+            <span id="progress-bar-fill"></span>
+          </div> -->
+          <br> <button 
+          id="pause-button"
+          class="pause">Pause</button>
+            <h6>Violet Spirit</h6>
+            <h7>Dan Henig</h7>
+        </div>
+      </div>
         
         <!-- Add more content as needed -->
     
     </main>
     
 
-    <div class="inner">
+
+
+    <!-- <div class="outer">
       <h4>Next Song:
       </h4>
       <div class="inner">
@@ -107,7 +169,7 @@
          <button id="play-button">Play audio</button> 
        
       </div>
-    </div>
+    </div> -->
 
     <!-- Footer Section -->
     <footer>
