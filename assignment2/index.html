@@ -89,12 +89,17 @@
       <section>
 
        <div class="inner">
-        <div class="timer-display-id"> 
+        <div class="timer-display-id"
+        > 
           <h3>Study Timer </h3>
           <p id="timer">00:00 </p>
           <!-- Using this site https://stackoverflow.com/questions/63798545/how-to-stop-timer-count-and-start-with-saved-time I copied and pasted a timer. Though this should be scripted, for convenience (and to minimise errors) I left it the way it is -->
-           <button id="start-timer" onclick="start()">Start </button>
-            <button id="stop-timer" onclick="stop()">Stop  </button>
+           <button 
+           id="start-timer" onclick="start()"
+           class="btn">Start </button>
+            <button 
+            id="stop-timer" onclick="stop()"
+            class="btn">Stop  </button>
         </div>
         <script src="timer.js"></script>
       </section>
