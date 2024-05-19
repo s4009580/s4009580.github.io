@@ -3,9 +3,29 @@
 const myVideo = document.querySelector("#my-video");
 console.log(myVideo);
 
-// scripting the play button
+// The following code allows me to play and pause a video on click of a button
 
+const playPauseButton = document.querySelector("#play-pause-btn");
+console.log(playPauseButton);
 
+const playPauseImg= document.querySelector("#play-pause-img");
+console.log(playPauseImg);
+
+playPauseButton.addEventListener("click", toggleVideoPlayback);
+
+function toggleVideoPlayback()
+{
+    if(myVideo.paused || myVideo.ended)
+    {
+        playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v2.png";
+        myVideo.play();
+    }
+    else
+    {
+        playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v2.png";
+        myVideo.pause();
+    }
+}
 
 // This is a start stop timer code from https://stackoverflow.com/questions/63798545/how-to-stop-timer-count-and-start-with-saved-time //
 
