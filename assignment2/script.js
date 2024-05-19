@@ -64,52 +64,6 @@ progressBarFill.style.width = progress + "%";
 console.log(progress);
 }
 
-// ----------------------------------------------------------
-// The following code will navigate two timelines of the video //
-
-const step1Button = document.querySelector("#step1");
-console.log(step1Button);
-step1Button.addEventListener("click", gotoStep1);
-
-function gotoStep1()
-{
-    myVideo.currentTime = 16.0;
-}
-
-const step2Button = document.querySelector("#step2");
-console.log(step2Button);
-step2Button.addEventListener("click", gotoStep2);
-
-function gotoStep2()
-{
-    myVideo.currentTime = 43.0;
-}
-
-
-// ----------------------------------------------------------
-// The following code will go full screen mode for the vidoe //
-myVideo.addEventListener("dblclick", goFullscreen);
-
-
-const fullscreenButton = document.querySelector("#fullscreen-btn");
-console.log(fullscreenButton);
-
-fullscreenButton.addEventListener("click", goFullscreen);
-
-function goFullscreen()
-{
-    if(!document.fullscreenElement)
-    {
-        myVideo.requestFullscreen();
-
-    }
-    else
-    {
-        document.exitFullscreen();
-    }
-}
-
-
 // This is a start stop timer code from https://stackoverflow.com/questions/63798545/how-to-stop-timer-count-and-start-with-saved-time //
 
 const ret = document.getElementById("timer");
@@ -145,3 +99,27 @@ function start() {
     ret.innerHTML = convertSec(counter++); // timer start counting here...
   }, 1000);
 }
+
+// ----------------------------------------------------------
+// The following code will go full screen mode for the vidoe //
+myVideo.addEventListener("dblclick", goFullscreen);
+
+
+const fullscreenButton = document.querySelector("#fullscreen-btn");
+console.log(fullscreenButton);
+
+fullscreenButton.addEventListener("click", goFullscreen);
+
+function goFullscreen()
+{
+    if(!document.fullscreenElement)
+    {
+        myVideo.requestFullscreen();
+
+    }
+    else
+    {
+        document.exitFullscreen();
+    }
+}
+

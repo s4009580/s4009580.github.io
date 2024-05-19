@@ -34,7 +34,7 @@
     <main class="container">
       <!-- Media Player Section -->
       <div class="media-player">
-        <video id="my-video" controls>
+        <video id="my-video">
           <source
             src="wow.mp4"
             type="video/mp4"
@@ -42,6 +42,12 @@
           />
         </video>
      
+        <div class="progress-bar">
+          <span id="progress-bar-fill"></span>
+        </div>
+  <h1> Underwater Exploration
+    <h2>by Godmode</h2>
+  </h1>
         <section class="video-controls">
           <button id="play-pause-btn">
             <img
@@ -72,10 +78,7 @@
             />
           </button>
           
-          
-          <div class="progress-bar">
-            <span id="progress-bar-fill"></span>
-          </div>
+   
 
         </section>
            
@@ -84,8 +87,10 @@
     
       <!-- Additional Content Section -->
       <section>
+
+       <div class="inner">
         <div class="timer-display-id"> 
-          <h1>Study Timer </h1>
+          <h3>Study Timer </h3>
           <p id="timer">00:00 </p>
           <!-- Using this site https://stackoverflow.com/questions/63798545/how-to-stop-timer-count-and-start-with-saved-time I copied and pasted a timer. Though this should be scripted, for convenience (and to minimise errors) I left it the way it is -->
            <button id="start-timer" onclick="start()">Start </button>
@@ -98,6 +103,13 @@
         <!-- Add more content as needed -->
     
     </main>
+    
+
+    <div class="inner">
+      <h4>Next Song:
+      </h4>
+      <div class="inner"></div>
+    </div>
 
     <!-- Footer Section -->
     <footer>
