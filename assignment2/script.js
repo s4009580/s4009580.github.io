@@ -123,3 +123,16 @@ function goFullscreen()
     }
 }
 
+// The following code will play the songs in the 'next song' queue
+
+const airportAudio = document.querySelector("#airport-audio")
+console.log(airportAudio);
+airportAudio.removeAttribute("controls")
+const playButton = document.querySelector("#play-button");
+console.log(playButton);
+
+playButton.addEventListener("click", playAirportAudio);
+
+function playAirportAudio() {
+    airportAudio.play();
+}

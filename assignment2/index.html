@@ -68,17 +68,7 @@
             />
           </button>
 
-          <button id="fullscreen-btn">
-            <img
-              id="fullscreen-img"
-              src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
-              alt="Play Button"
-              width="24"
-              height="24"
-            />
-          </button>
-          
-   
+      <!-- Thought about adding a full screen button but I wanted it to act as a background video + the user wouldn't be able to see the timer if they full screened -->
 
         </section>
            
@@ -91,7 +81,7 @@
        <div class="inner">
         <div class="timer-display-id"
         > 
-          <h3>Study Timer </h3>
+          <h3><u>Study Timer</u> </h3>
           <p id="timer">00:00 </p>
           <!-- Using this site https://stackoverflow.com/questions/63798545/how-to-stop-timer-count-and-start-with-saved-time I copied and pasted a timer. Though this should be scripted, for convenience (and to minimise errors) I left it the way it is -->
            <button 
@@ -103,8 +93,7 @@
         </div>
         <script src="timer.js"></script>
       </section>
-        <h2>Additional Content</h2>
-        <p>This is where you can showcase any other relevant content.</p>
+        
         <!-- Add more content as needed -->
     
     </main>
@@ -113,7 +102,11 @@
     <div class="inner">
       <h4>Next Song:
       </h4>
-      <div class="inner"></div>
+      <div class="inner">
+        <audio src="airport.mp3" id="airport-audio"></audio>
+         <button id="play-button">Play audio</button> 
+       
+      </div>
     </div>
 
     <!-- Footer Section -->
