@@ -29,28 +29,55 @@ function toggleVideoPlayback()
 
 // The following code will play the song 'Cocktail Hour' in the song queue
 
+// const cocktailAudio = document.querySelector("#cocktail-audio")
+// console.log(cocktailAudio);
+
+// const playBtn = document.querySelector("#play-btn");
+// console.log(playBtn);
+
+// playBtn.addEventListener("click", playCocktailAudio);
+
+// function playCocktailAudio() {
+//     cocktailAudio.play();
+// }
+
 const cocktailAudio = document.querySelector("#cocktail-audio")
 console.log(cocktailAudio);
 
 const playBtn = document.querySelector("#play-btn");
 console.log(playBtn);
 
+const yooImg = document.querySelector("#yoo-pause");
+console.log(yooImg) 
+// defining the image to do a state change of pause and play
+
 playBtn.addEventListener("click", playCocktailAudio);
 
-function playCocktailAudio() {
-    cocktailAudio.play();
+function playCocktailAudio() 
+
+{
+  if(cocktailAudio.paused || cocktailAudio.ended)
+  {
+      yooImg.src = "yoo-play.jpg";
+      cocktailAudio.play();
+  }
+  else
+  {
+      yooImg.src = "yoo-pause.jpg";
+      cocktailAudio.pause();
+  }
 }
 
-// This code will allow users to pause the track 'violet spirit' in the preview
-const pauseBtn = document.querySelector("#pause-btn");
-console.log(pauseBtn);
+// This code will allow users to pause the track 'cocktail hour' in the preview
+// const pauseBtn = document.querySelector("#pause-btn");
+// console.log(pauseBtn);
 
-pauseBtn.addEventListener("click", pauseCocktailAudio);
+// pauseBtn.addEventListener("click", pauseCocktailAudio);
 
-function pauseCocktailAudio() {
-    cocktailAudio.pause();
-}
-
+// function pauseCocktailAudio() {
+//     cocktailAudio.pause();
+// }
+// I put pause buttons for pausing the songs but then realised it would be much easier to just click the same picture
 
 // The following code will play the song 'violet spirit' in the song queue
 
@@ -60,21 +87,33 @@ console.log(violetAudio);
 const playButton = document.querySelector("#play-button");
 console.log(playButton);
 
+const yeeImg = document.querySelector("#yee-pause");
+console.log(yeeImg) 
+
 playButton.addEventListener("click", playVioletAudio);
 
 function playVioletAudio() {
-    violetAudio.play();
+  if(violetAudio.paused || violetAudio.ended)
+  {
+      yeeImg.src = "yee-play.jpg";
+      violetAudio.play();
+  }
+  else
+  {
+      yeeImg.src = "yee-pause.jpg";
+      violetAudio.pause();
+  }
 }
 
 // This code will allow users to pause the track 'violet spirit' in the preview
-const pauseButton = document.querySelector("#pause-button");
-console.log(pauseButton);
+// const pauseButton = document.querySelector("#pause-button");
+// console.log(pauseButton);
 
-pauseButton.addEventListener("click", pauseVioletAudio);
+// pauseButton.addEventListener("click", pauseVioletAudio);
 
-function pauseVioletAudio() {
-    violetAudio.pause();
-}
+// function pauseVioletAudio() {
+//     violetAudio.pause();
+// }
 // The following code allows me to mute and unmute a video on click of a button
 
 const muteUnmuteButton = document.querySelector("#mute-unmute-btn");
