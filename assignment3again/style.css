@@ -6,12 +6,12 @@ header {
     padding: 10px 0;
     text-align: center;
     width: 100%;
-    display: flex;
-    justify-content:space-around;
+   vertical-align: top;
   }
 
 body {
     background-color: #6f90ce;
+    background-image: radial-gradient(circle, #6f90ce, #6b8cca, #6788c7, #6485c3, #6081c0, #5c7dbc, #597ab7, #5576b3, #5171ad, #4c6ca8, #4868a2, #44639d);
     /* Used this colour as blue is a very popular and well-known
     colour to the franchise, sells the brading of Pokemon. */
     display: flex;
@@ -58,6 +58,11 @@ body {
   h1 {
     font-size: 40px;
   }
+
+  h3 {
+    font-size: 40px;
+  }
+ 
   
   main {
     display: grid;
@@ -124,9 +129,20 @@ body {
   }
   
   button:hover {
-    background-color: #516a75;
+    background-color: #6aa0b8;
   }
   
+.btn {
+    background-color: #465ca1;
+  border: none;
+  border-radius: 20px;
+  padding-left: .3cm;
+  padding-right: .3cm;
+  padding-top: .3cm;
+  padding-bottom: .3cm;
+  text-size-adjust: 20px;
+}
+
   #endMessage {
     display: none;
   }

@@ -42,7 +42,7 @@ function dragDrop() {
     matchingCounter++;
   }
 
-  if (matchingCounter === 12) {
+  if (matchingCounter === 18) {
     endMessage.style.display = 'block';
   }
 
@@ -55,16 +55,56 @@ function checkForMatch(selected, dropTarget) {
       return dropTarget === 's1' ? true : false;
 
     case 'e2':
-      return dropTarget === 's2' ? true : false;
+      return dropTarget === 's1' ? true : false;
 
     case 'e3':
-      return dropTarget === 's2' ? true : false;
+      return dropTarget === 's5' ? true : false;
 
     case 'e4':
-      return dropTarget === 's4' ? true : false;
+      return dropTarget === 's2' ? true : false;
 
     case 'e5':
+      return dropTarget === 's4' ? true : false;
+
+      case 'e6':
+      return dropTarget === 's2' ? true : false;
+
+      case 'e7':
+      return dropTarget === 's5' ? true : false;
+
+      case 'e8':
+      return dropTarget === 's5' ? true : false;
+
+      case 'e9':
       return dropTarget === 's3' ? true : false;
+
+      case 'e10':
+      return dropTarget === 's5' ? true : false;
+
+      case 'e11':
+      return dropTarget === 's4' ? true : false;
+
+      case 'e12':
+      return dropTarget === 's5' ? true : false;
+
+      case 'e13':
+      return dropTarget === 's1' ? true : false;
+
+      case 'e14':
+      return dropTarget === 's5' ? true : false;
+
+      case 'e15':
+      return dropTarget === 's3' ? true : false;
+
+      case 'e16':
+      return dropTarget === 's2' ? true : false;
+
+      case 'e17':
+      return dropTarget === 's3' ? true : false;
+
+      case 'e18':
+      return dropTarget === 's4' ? true : false;
+
 
     default:
       return false;
@@ -76,38 +116,56 @@ function checkForMatch2(selected, dropTarget) {
     case 's1':
       return dropTarget === 'e1' ? true : false;
 
-    case 's2':
+    case 's1':
       return dropTarget === 'e2' ? true : false;
 
-    case 's2':
+    case 's6':
       return dropTarget === 'e3' ? true : false;
 
-    case 's4':
+    case 's2':
       return dropTarget === 'e4' ? true : false;
 
-    case 's3':
+    case 's4':
       return dropTarget === 'e5' ? true : false;
 
-      case 's1':
+      case 's2':
         return dropTarget === 'e6' ? true : false;
   
-      case 's4':
+      case 's6':
         return dropTarget === 'e7' ? true : false;
   
-      case 's3':
+      case 's6':
         return dropTarget === 'e8' ? true : false;
   
       case 's3':
         return dropTarget === 'e9' ? true : false;
   
-      case 's1':
+      case 's5':
         return dropTarget === 'e10' ? true : false;
 
         case 's4':
             return dropTarget === 'e11' ? true : false;
       
-          case 's2':
+          case 's5':
             return dropTarget === 'e12' ? true : false;
+
+            case 's1':
+            return dropTarget === 'e13' ? true : false;
+
+            case 's5':
+            return dropTarget === 'e14' ? true : false;
+
+            case 's3':
+            return dropTarget === 'e15' ? true : false;
+
+            case 's2':
+            return dropTarget === 'e16' ? true : false;
+
+            case 's3':
+            return dropTarget === 'e17' ? true : false;
+
+            case 's4':
+            return dropTarget === 'e18' ? true : false;
 
    
 

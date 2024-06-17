@@ -12,9 +12,12 @@
   <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-  <h1>Pokemon Generation Quiz</h1>
-  <p>Which starter Pokemon belongs in which Generation?</p>
-
+    <header>
+        <h1>Pokemon Generation Quiz</h1>
+        <p>Which starter Pokemon belongs in which Generation?</p>
+      
+    </header>
+ 
   <main class="container">
 
     <div>
@@ -25,6 +28,7 @@
           <li id="s4">Gen 4</li>
           <li id="s5">Gen 5</li>
           <li id="s6">Gen 6</li>
+        
          
         </ul>
       </div>
@@ -32,22 +36,34 @@
     <div>
       <ul class="draggable-list">
         <li id="e1" draggable="true"><img src="buba.png"></li>
-        <li id="e2" draggable="true"><img src="todo.png"></li>
-        <li id="e3" draggable="true"><img src="cyn.png"></li>
-        <li id="e4" draggable="true"><img src="pip.png"></li>
-        <li id="e5" draggable="true"><img src="tor.png"></li>
-        <li id="e6" draggable="true"><img src="char.png"></li>
+        <li id="e2" draggable="true"><img src="char.png"></li>
+        <li id="e3" draggable="true"><img src="ches.png"></li>
+        <li id="e4" draggable="true"><img src="chik.png"></li>
+        <li id="e5" draggable="true"><img src="chim.png"></li>
+        <li id="e6" draggable="true"><img src="cyn.png"></li>
     </ul>
       </div>
       <br>
     <div>
         <ul class="draggable-list">
-        <li id="e7" draggable="true"><img src="turt.png"></li>
-        <li id="e8" draggable="true"><img src="mud.png"></li>
-        <li id="e9" draggable="true"><img src="tree.png"></li>
-        <li id="e10" draggable="true"><img src="squit.png"></li>
-        <li id="e11" draggable="true"><img src="chim.png"></li>
-        <li id="e10" draggable="true"><img src="chik.png"></li>
+        <li id="e7" draggable="true"><img src="fen.png"></li>
+        <li id="e8" draggable="true"><img src="fro.png"></li>
+        <li id="e9" draggable="true"><img src="mud.png"></li>
+        <li id="e10" draggable="true"><img src="osh.png"></li>
+        <li id="e11" draggable="true"><img src="pip.png"></li>
+        <li id="e12" draggable="true"><img src="sni.png"></li>
+</ul>
+      
+    </div>
+<br>
+    <div>
+        <ul class="draggable-list">
+        <li id="e13" draggable="true"><img src="squit.png"></li>
+        <li id="e14" draggable="true"><img src="tep.png"></li>
+        <li id="e15" draggable="true"><img src="tree.png"></li>
+        <li id="e16" draggable="true"><img src="todo.png"></li>
+        <li id="e17" draggable="true"><img src="tor.png"></li>
+        <li id="e18" draggable="true"><img src="turt.png"></li>
 </ul>
       
     </div>
@@ -56,35 +72,10 @@
 
   <div id="endMessage">
     <h3>Well done!</h3>
-    <h3>¡Bien hecho!</h3>
-    <table>
-      <tr>
-        <th>English</th>
-        <th>Spanish</th>
-      </tr>
-      <tr>
-        <td>What’s your name?</td>
-        <td>¿Cómo te llamas?</td>
-      </tr>
-      <tr>
-        <td>Nice to meet you</td>
-        <td>Mucho gusto</td>
-      </tr>
-      <tr>
-        <td>I'm sorry</td>
-        <td>Lo siento</td>
-      </tr>
-      <tr>
-        <td>What do you do in your free time?</td>
-        <td>¿Qué haces en tu tiempo libre?</td>
-      </tr>
-      <tr>
-        <td>Is something wrong?</td>
-        <td>¿Pasa algo?</td>
-      </tr>
-    </table>
 
-    <button onclick="playAgain()">Play Again</button>
+    <button 
+    onclick="playAgain()"
+    id="btn">Play Again</button>
   </div>
 
   <script src="script.js"></script>
