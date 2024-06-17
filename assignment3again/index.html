@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matching Game</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+  <h1>Pokemon Generation Quiz</h1>
+  <p>Which starter Pokemon belongs in which Generation?</p>
+
+  <main class="container">
+
+    <div>
+        <ul class="draggable-list">
+          <li id="s1">Gen 1</li>
+          <li id="s2">Gen 2</li>
+          <li id="s3">Gen 3</li>
+          <li id="s4">Gen 4</li>
+          <li id="s5">Gen 5</li>
+          <li id="s6">Gen 6</li>
+         
+        </ul>
+      </div>
+<br>
+    <div>
+      <ul class="draggable-list">
+        <li id="e1" draggable="true"><img src="buba.png"></li>
+        <li id="e2" draggable="true"><img src="todo.png"></li>
+        <li id="e3" draggable="true"><img src="cyn.png"></li>
+        <li id="e4" draggable="true"><img src="pip.png"></li>
+        <li id="e5" draggable="true"><img src="tor.png"></li>
+        <li id="e6" draggable="true"><img src="char.png"></li>
+    </ul>
+      </div>
+      <br>
+    <div>
+        <ul class="draggable-list">
+        <li id="e7" draggable="true"><img src="turt.png"></li>
+        <li id="e8" draggable="true"><img src="mud.png"></li>
+        <li id="e9" draggable="true"><img src="tree.png"></li>
+        <li id="e10" draggable="true"><img src="squit.png"></li>
+        <li id="e11" draggable="true"><img src="chim.png"></li>
+        <li id="e10" draggable="true"><img src="chik.png"></li>
+</ul>
+      
+    </div>
+   
+  </main>
+
+  <div id="endMessage">
+    <h3>Well done!</h3>
+    <h3>¡Bien hecho!</h3>
+    <table>
+      <tr>
+        <th>English</th>
+        <th>Spanish</th>
+      </tr>
+      <tr>
+        <td>What’s your name?</td>
+        <td>¿Cómo te llamas?</td>
+      </tr>
+      <tr>
+        <td>Nice to meet you</td>
+        <td>Mucho gusto</td>
+      </tr>
+      <tr>
+        <td>I'm sorry</td>
+        <td>Lo siento</td>
+      </tr>
+      <tr>
+        <td>What do you do in your free time?</td>
+        <td>¿Qué haces en tu tiempo libre?</td>
+      </tr>
+      <tr>
+        <td>Is something wrong?</td>
+        <td>¿Pasa algo?</td>
+      </tr>
+    </table>
+
+    <button onclick="playAgain()">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+
+  
+</body>
+</html>
