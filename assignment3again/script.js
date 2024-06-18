@@ -1,13 +1,14 @@
+// https://www.youtube.com/watch?v=twq9WHgUhQc&t=94s I had followed this tutorial and repository for this script 
 const draggableListItems = document.querySelectorAll('.draggable-list li');
 const endMessage = document.getElementById('endMessage');
 
-// current phrase being dragged
+// current Pokemon being dragged
 let selectedId;
 
-// target phrase
+// target generation
 let dropTargetId;
 
-// counter for correct phrases
+// counter for correct 
 let matchingCounter = 0;
 
 addEventListeners();
@@ -48,7 +49,7 @@ function dragDrop() {
 
   this.classList.remove('over');
 }
-
+// Allows for the pokemon to 'hide' once they're placed in the correct box.
 function checkForMatch(selected, dropTarget) {
   switch (selected) {
     case 'e1':
@@ -192,3 +193,39 @@ function addEventListeners() {
     item.addEventListener('dragleave', dragLeave);
   })
 }
+
+
+
+// This was the script from Rohit's drag and drop site but I realised there wasn't much to work with here. We didn't run it through class very much so I don't understand most of it. 
+// Running into this problem, I decided to look for guidance elsewhere, be it a page source of another site or a tutorial online. 
+
+// let draggedElement = null;
+
+// const colorBox = document.querySelector(".colorbox");
+// const dropBox = document.querySelector(".dropbox");
+
+// colorBox.addEventListener("dragstart", startDrag);
+
+// function startDrag() {
+//   draggedElement = colorBox;
+// }
+
+// dropBox.addEventListener("dragover", endDrag);
+
+// function endDrag(event) {
+//   event.preventDefault();
+// }
+
+// dropBox.addEventListener("drop", handleDrop);
+
+// function handleDrop() {
+//   if (draggedElement) {
+//     const color = window
+//       .getComputedStyle(draggedElement)
+//       .getPropertyValue("background-color");
+//     // const color = draggedElement.style.backgroundColor;
+//     dropBox.style.backgroundColor = color;
+//     dropBox.textContent = "Correct!";
+//     draggedElement = null;
+//   }
+// }

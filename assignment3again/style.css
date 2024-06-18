@@ -9,11 +9,13 @@ header {
    vertical-align: top;
   }
 
+  /* I used the body styling from the previous assignment to help me start. I'm still pretty pleased with the typeface used here
+  as it's a sans serif, very simple and fits with the aesthetic cohesion. */
 body {
     background-color: #6f90ce;
-    background-image: radial-gradient(circle, #6f90ce, #6b8cca, #6788c7, #6485c3, #6081c0, #5c7dbc, #597ab7, #5576b3, #5171ad, #4c6ca8, #4868a2, #44639d);
+    background-image: radial-gradient(circle, #6d8eca, #6b8cca, #6788c7, #6485c3, #6081c0, #5c7dbc, #597ab7, #5576b3, #5171ad, #4c6ca8, #4868a2, #2c5196);
     /* Used this colour as blue is a very popular and well-known
-    colour to the franchise, sells the brading of Pokemon. */
+    colour to the franchise, sells the branding of Pokemon. */
     display: flex;
     text-align: center;
     margin: auto;
@@ -27,13 +29,15 @@ body {
     font-style: normal;
     font-optical-sizing: auto;
     font-style: normal;
-    color: #d7d7a1;
-    stroke: #516a75;
+    color: #ffea8a;
+    /* I wanted to add a stroke to outline the text similar to Pokemon's brand logo but it didn't work...  */
+    /* stroke: #1e556d; */
     /* color: #3c2a21; */
     font-size: 1.1rem;
   }
   
-  .outer {
+  /* some styling in a previous attempt */
+  /* .outer {
     width: 100px;
     min-height: 100px;
     padding: 10px;
@@ -42,7 +46,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-  }
+  } */
 
   .container {
     max-width: 960px;
@@ -71,7 +75,7 @@ body {
   }
   
   .draggable-list {
-    padding: 5px;
+    padding: 10px;
     display: flex;
    
   }
@@ -81,20 +85,32 @@ body {
     padding: 10px;
     margin: 5px;
     /* background-color: #cfd8dc; */
-    border: 1px solid #b0bec5;
+    border: 3px solid #a8d8ee;
     border-radius: 20px;
     /* color: #1b2124; */
     height: 100px;
     width: 100px;
+    /* The grab cursor from the tutorial is proving very effective as the hand makes it more intuitive for users to
+    click and drag the boxes */
     cursor: grab;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
-  .over {
+  /* /* Added a hover feature over the boxes so there's a higher sense of interaction with clicking the Pokemon.
+   My only issue is because the 'gen' boxes are under a list too, the hover styling is also applied to them and I
+   wasn't sure how to separate the two so the 'gen' boxes also receive hover feedback however, can't be dragged.   */
+  
+li:hover {
+  background-color: rgb(152, 182, 233);
+    scale: 1;
+    translate: -5px 5px;
+}
+
+  /* .over {
     background-color: #90a4ae;
-  }
+  } */
   
   
   /* table {
@@ -104,32 +120,34 @@ body {
     /* border: 1px solid #b0bec5; */
   /* } */ */
   
+
+  /* This piece of styling affects the way the button turns out. I don't want to muddle the names and codes too much so I'd rather leave it here */
   th, td {
     padding: 10px 10px;
   }
   
   td {
-    border: 1px solid #90a4ae;
+    border: 1px solid #7ebad8;
   }
   
   tr:nth-child(even) {
-    background-color: #81b4ca;
+    background-color: #8bc2da;
   }
   
   button {
     margin: auto;
     cursor: pointer;
     display: block;
-    padding: 10px;
+    padding: 20px;
     font-size: 16px;
-    border-radius: 4px;
+    border-radius: 10px;
     border: none;
-    background-color: #607d8b;
+    background-color: #68aceb;
     color: #fff;
   }
   
   button:hover {
-    background-color: #6aa0b8;
+    background-color: #8bcde9;
   }
   
 .btn {
@@ -147,6 +165,8 @@ body {
     display: none;
   }
 
+
+  /* Some empty code I attempted to use in a previous attempt */
 /* .container {
     display: flex;
     gap: 1.5rem;

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matching Game</title>  
+  <title>Pokemon Match Game</title>  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
@@ -17,22 +17,63 @@
         <p>Which starter Pokemon belongs in which Generation?</p>
       
     </header>
- 
+ <!-- Code that I had in a previous attempt. As I was manually trying to format and make sense of the drag and drop
+on my own using the page source of Rohit's drag and realised I would have to mess around with the names
+and make sense of the script. In following this tutorial https://www.youtube.com/watch?v=twq9WHgUhQc&t=94s by James Sneider,
+the dividers weren't aligning with his script (which uses list properties) so the best course of action was to copy out the code from
+his repository and make minor adjustments to make it my mix and match game-->
+  <!-- </header>
+  <div class="container">  
+      <div class="outer dropbox" id="g1">Gen 1</div>
+      <div class="outer dropbox" id="g2">Gen 2</div>
+      <div class="outer dropbox" id="g3">Gen 3</div>
+      <div class="outer dropbox" id="g4">Gen 4</div>
+  </div>
+<br>
+  <main class="poke">
+      <div class="container">
+          <div class="outer colorbox" id="p1" draggable="true" ><img src="buba.png"></div>
+          <div class="outer colorbox" id="p2" draggable="true" ><img src="squit.png"></div>
+          <div class="outer colorbox" id="p3" draggable="true" ><img src="char.png"></div>
+          <div class="outer colorbox" id="p4" draggable="true" ><img src="chik.png"></div>
+          <div class="outer colorbox" id="p5" draggable="true" ><img src="cyn.png"></div>
+          <div class="outer colorbox" id="p6" draggable="true" ><img src="todo.png"></div>
+          </div>
+          <br>
+          <div class="container">
+              <div class="outer colorbox" id="p7" draggable="true" ><img src="tree.png"></div>
+              <div class="outer colorbox" id="p8" draggable="true" ><img src="tor.png"></div>
+              <div class="outer colorbox" id="p9" draggable="true" ><img src="mud.png"></div>
+              <div class="outer colorbox" id="p10" draggable="true" ><img src="pip.png"></div>
+              <div class="outer colorbox" id="p11" draggable="true" ><img src="chim.png"></div>
+              <div class="outer colorbox" id="p12" draggable="true" ><img src="turt.png"></div>
+          </div>
+         
+      </div>
+  </main> -->
   <main class="container">
 
+    <!-- As seen here, there is border styling within this set of lists. In the styling, 
+    the li is applied to all of these boxes and I wasn't sure how to approach styling the generation boxes
+  as changing the name of the class affects the code. I chose to make the borders dotted here so it's more intuitive
+for users to drag the pokemon (within solid borders) into these categories -->
     <div>
         <ul class="draggable-list">
-          <li id="s1">Gen 1</li>
-          <li id="s2">Gen 2</li>
-          <li id="s3">Gen 3</li>
-          <li id="s4">Gen 4</li>
-          <li id="s5">Gen 5</li>
-          <li id="s6">Gen 6</li>
+          <li id="s1" style="border: dotted #93bfd4; ">Gen 1</li>
+          <li id="s2" style="border: dotted #93bfd4;">Gen 2</li>
+          <li id="s3" style="border: dotted #93bfd4;">Gen 3</li>
+          <li id="s4" style="border: dotted #93bfd4;">Gen 4</li>
+          <li id="s5" style="border: dotted #93bfd4;">Gen 5</li>
+          <li id="s6" style="border: dotted #93bfd4;">Gen 6</li>
         
          
         </ul>
       </div>
 <br>
+<!-- The video tutorial was initially for a Spanish to English match up but the IDs are so easy and simple I left them the way they were.
+All images of the Pokemon are drawn by me in Procreate in a square canvas. In getting similar sizes, I made sure to draw over a lower opacity
+drawing of a previous Pokemon. Their visuals are kept consistent in the way they're very simplistic, same size lineart and have recognisable features and colours. 
+ -->
     <div>
       <ul class="draggable-list">
         <li id="e1" draggable="true"><img src="buba.png"></li>
@@ -69,7 +110,9 @@
     </div>
    
   </main>
-
+<!-- In the tutorial followed, there is a 'well done' message at the end that I thought I wouldn't initially need but 
+it would probably end very awkwardly if the user finished and there wasn't a path to do anything else after. This function here
+allows players to press the button and replay the game.  -->
   <div id="endMessage">
     <h3>Well done!</h3>
 
