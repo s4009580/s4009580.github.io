@@ -15,7 +15,7 @@ body {
     background-color: #6f90ce;
     background-image: radial-gradient(circle, #6d8eca, #6b8cca, #6788c7, #6485c3, #6081c0, #5c7dbc, #597ab7, #5576b3, #5171ad, #4c6ca8, #4868a2, #2c5196);
     /* Used this colour as blue is a very popular and well-known
-    colour to the franchise, sells the branding of Pokemon. */
+    colour to the franchise, sells the branding of Pokemon. Colour code came from https://mycolor.space/*/
     display: flex;
     text-align: center;
     margin: auto;
